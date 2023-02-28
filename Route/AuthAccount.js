@@ -18,9 +18,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage })
 
 Route.post('/register',upload.single('image'),AccountController.register);
-Route.get('/alluser',MiddleWare,AccountController.allUser);
-Route.post('/login',MiddleWare,AccountController.login);
-Route.get('/getuser/:id',MiddleWare,AccountController.searchByid);
+Route.get('/alluser',AccountController.allUser);
+Route.post('/login',AccountController.login);
+Route.get('/getuser/:id',AccountController.searchByid);
 Route.delete('/deleteuser/:id',MiddleWare,AccountController.deleteUser);
 Route.put('/updateuser/:id',MiddleWare,AccountController.updateUser);
 
