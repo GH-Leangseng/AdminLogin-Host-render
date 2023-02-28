@@ -17,7 +17,8 @@
   "version": "1.0.0",
   "main": "Run/server_Side.js",
   "scripts": {
-    "dev": "nodemon Run/server_Side"
+    "dev": "nodemon Run/server_Side",
+    "start": "node Run/server_Side"
   },
   "keywords": [],
   "author": "",
